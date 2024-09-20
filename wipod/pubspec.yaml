@@ -33,8 +33,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  webview_flutter: ^3.0.4
   flutter_svg: ^2.0.10+1
-
+  provider: ^6.0.1
+  fl_chart: ^0.68.0
+  flutter_colorpicker: 1.1.0
+  intl: ^0.17.0
 
 
 
@@ -77,6 +81,57 @@ flutter:
     - assets/images/location_inactive.svg
     - assets/images/lighting_active.svg
     - assets/images/lighting_inactive.svg
+    - assets/images/battery80.svg
+    - assets/images/battery60.svg
+    - assets/images/battery40.svg
+    - assets/images/battery20.svg
+    - assets/images/currentlycharging.svg
+    - assets/images/maxchargelimit.svg
+    - assets/images/scheduledcharging.svg
+    - assets/images/departuretime.svg
+    - assets/images/sectionline.svg
+    - assets/images/carinterior.jpg
+    - assets/images/heat_0.svg
+    - assets/images/heat_1.svg
+    - assets/images/heat_2.svg
+    - assets/images/heat_3.svg
+    - assets/images/off_active.svg
+    - assets/images/keep_active.svg
+    - assets/images/pet_active.svg
+    - assets/images/camp_active.svg
+    - assets/images/defrost_active.svg
+    - assets/images/off_inactive.svg
+    - assets/images/keep_inactive.svg
+    - assets/images/pet_inactive.svg
+    - assets/images/camp_inactive.svg
+    - assets/images/defrost_inactive.svg
+    - assets/images/currentTemp.svg
+    - assets/images/wipodcar1.png
+    - assets/images/defaultLighting.svg
+    - assets/images/ambientLighting.svg
+    - assets/images/musicLighting.svg
+    - assets/images/weatherLighting.svg
+    - assets/images/frunk.svg
+    - assets/images/trunk.svg
+    - assets/images/time_date.svg
+    - assets/images/sync.svg
+    - assets/images/languages.svg
+    - assets/images/security.svg
+    - assets/images/theme.svg
+    - assets/images/notifications.svg
+    - assets/images/profile_picture.png
+    - assets/images/name_icon.svg
+    - assets/images/region_icon.svg
+    - assets/images/nickname_icon.svg
+    - assets/images/phone_icon.svg
+    - assets/images/dob_icon.svg
+    - assets/images/instagram.svg
+    - assets/images/whatsapp.svg
+    - assets/images/twitter.svg
+
+
+
+
 
   fonts:
     - family: Poppins

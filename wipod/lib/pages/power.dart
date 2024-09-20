@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:wipod/pages/powerSections.dart';
+import 'package:wipod/pages/section.dart';
 
 
 class PowerPage extends StatelessWidget {
@@ -9,9 +10,13 @@ class PowerPage extends StatelessWidget {
   final VoidCallback onBackButtonPressed;
 
   final List<Widget> sections = [
-    SectionWidget1(),
-    SectionWidget2(),
-    SectionWidget3(),
+    CurrentlyCharging(),
+    SectionLine(),
+    ChargeLimitWidget(),
+    SectionLine(),
+    ScheduledChargingWidget(),
+    SectionLine(),
+    ChargingHistoryWidget(),
   ];
 
 
@@ -22,11 +27,14 @@ class PowerPage extends StatelessWidget {
     return Scaffold(
 
         appBar: AppBar(
-            title: Text('Power Page'),
+            title: Text('Power',style: TextStyle(color:Colors.black,fontFamily: 'Poppins',
+              fontWeight: FontWeight.bold,),),
             leading: IconButton(
               icon: Icon(Icons.arrow_back),
               onPressed: onBackButtonPressed,
-            )),
+            ),
+        backgroundColor: Colors.white,
+        shadowColor: Colors.black, surfaceTintColor: Colors.white),
 
       body: ListView.builder(
        itemCount: sections.length,

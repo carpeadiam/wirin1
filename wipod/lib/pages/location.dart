@@ -1,13 +1,16 @@
 
 import 'package:flutter/material.dart';
 import 'package:wipod/pages/locationSections.dart';
+import 'package:wipod/pages/section.dart';
 
 class LocationPage extends StatelessWidget {
 
   final List<Widget> sections = [
-    SectionWidget1(),
-    SectionWidget2(),
-    SectionWidget3(),
+    LocationSearchWidget(),
+    SectionLine(),
+    SavedLocationsWidget(),
+    SectionLine(),
+    LocateChargerWidget(),
   ];
 
   final VoidCallback onBackButtonPressed;
@@ -18,12 +21,14 @@ class LocationPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
 
-        appBar: AppBar(
-        title: Text('Location Page'),
-    leading: IconButton(
-    icon: Icon(Icons.arrow_back),
-    onPressed: onBackButtonPressed,
-    )),
+        appBar:  AppBar(
+            title: Text('Location',style: TextStyle(color:Colors.black,fontFamily: 'Poppins',
+              fontWeight: FontWeight.bold,),),
+            leading: IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: onBackButtonPressed,
+            ) , backgroundColor: Colors.white,
+            shadowColor: Colors.black, surfaceTintColor: Colors.white),
 
       body: ListView.builder(
         itemCount: sections.length,

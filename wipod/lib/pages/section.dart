@@ -1,22 +1,18 @@
-// Currently not in use
-
-
-
-
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
-class ASection extends StatelessWidget{
-
+class SectionLine extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-    padding : const EdgeInsets.symmetric(vertical:2.0),
-    child: Container(
-    height: 200,
-    color: Colors.deepPurple,
-    )
+    return Container(
+      height: 30,
+      color: Colors.white,
+      child: Center(
+          child:Container( child:
+          SvgPicture.asset("assets/images/sectionline.svg")
+          )
+      ),
     );
   }
-
 }
